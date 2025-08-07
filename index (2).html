@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pescadería y Mariscos José Luis Holguín</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .company-name {
+            font-size: 2.5rem;
+            color: #2c5aa0;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            background: #f8f9ff;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #2c5aa0;
+        }
+
+        .contact-item strong {
+            color: #2c5aa0;
+        }
+
+        .certifications {
+            background: linear-gradient(45deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .certifications h3 {
+            margin-bottom: 10px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: linear-gradient(45deg, #f0f2f5, #e1e5eb);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 1.1rem;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 5px;
+            text-transform: capitalize;
+        }
+
+        .product-measure {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #27ae60;
+            text-align: right;
+        }
+
+        .no-image {
+            background: linear-gradient(45deg, #f0f2f5, #e1e5eb);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 1.1rem;
+        }
+
+        .experience {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin: 30px 0;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .experience h3 {
+            color: #2c5aa0;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .company-name {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="https://res.cloudinary.com/drbromesx/image/upload/v1754546724/Captura_de_pantalla_2025-08-07_010441_juxbwl.png" alt="Logo Pescadería José Luis Holguín" class="logo">
+            <h1 class="company-name">Pescadería y Mariscos José Luis Holguín</h1>
+            <p class="tagline">Producto fresco de calidad • Más de 30 años de experiencia</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>📱 Teléfonos:</strong><br>
+                    0980415136 - 0939099359
+                </div>
+                <div class="contact-item">
+                    <strong>📧 Email:</strong><br>
+                    joseholguin1981@hotmail.com
+                </div>
+                <div class="contact-item">
+                    <strong>📍 Dirección:</strong><br>
+                    Santa Elena - La Libertad
+                </div>
+                <div class="contact-item">
+                    <strong>🏨 Clientes:</strong><br>
+                    Clubes, hoteles y restaurantes del país
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="experience">
+            <h3>Negocio Transgeneracional</h3>
+            <p>Con más de 30 años de experiencia en el mercado, somos un negocio transgeneracional donde mi padre fue el mentor y mantuvo este negocio por casi 50 años. Ofrecemos los mejores precios del mercado con producto fresco de calidad garantizada.</p>
+        </div>
+
+        <!-- Certifications -->
+        <div class="certifications">
+            <h3>🏆 Certificaciones de Calidad</h3>
+            <p>Trabajamos guiados por normas BPM y aplicamos estándares internacionales:</p>
+            <p><strong>ISO 9001 • ISO 14001 • ISO 45001</strong></p>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://res.cloudinary.com/drbromesx/image/upload/v1754543560/Captura_de_pantalla_2025-08-07_001215_hebeq4.png" alt="Atun entero">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Atún Entero</div>
+                    <div class="product-measure">Por Kg</div>
+                    <div class="product-price">$8.50</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://res.cloudinary.com/drbromesx/image/upload/v1754544336/40470298_1038385649676130_985941163527399791_n_k2kg4d.jpg" alt="Atun lomo">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Atún Lomo</div>
+                    <div class="product-measure">Por Kg</div>
+                    <div class="product-price">$10.00</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://res.cloudinary.com/drbromesx/image/upload/v1753981110/Captura_de_pantalla_2025-07-31_115151_exslgl.png" alt="Calamar baby tubo">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Calamar Baby Tubo</div>
+                    <div class="product-measure">Por Kg</div>
+                    <div class="product-price">$14.00</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://res.cloudinary.com/drbromesx/image/upload/v1753937846/Concha.Scallop_kl9rbg.jpg" alt="Concha scallop">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Concha Scallop</div>
+                    <div class="product-measure">Por Kg</div>
+                    <div class="product-price">$12.00</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://res.cloudinary.com/drbromesx/image/upload/v1754544156/Captura_de_pantalla_2025-08-07_002137_kdxv6b.png" alt="Corvina entera">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Corvina Entera</div>
+                    <div class="product-measure">Por Kg</div>
+                    <div class="product-price">$8.00</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://res.cloudinary.com/drbromesx/image/upload/v1754543778/Captura_de_pantalla_2025-08-07_001552_m7lnh9.png" alt="Corvina para plato">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Corvina para Plato</div>
+                    <div class="product-measure">Por unidad</div>
+                    <div class="product-price">$5.50</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://res.cloudinary.com/drbromesx/image/upload/v1753917609/Captura_de_pantalla_2024-03-20_145038_pznmud.png" alt="Langostino">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Langostino</div>
+                    <div class="product-measure">Por Kg</div>
+                    <div class="product-price">$18.00</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://res.cloudinary.com/drbromesx/image/upload/v1754543194/Captura_de_pantalla_2025-08-07_000612_b29dfv.png" alt="Lenguado filete">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Lenguado Filete</div>
+                    <div class="product-measure">Por Kg</div>
+                    <div class="product-price">$13.00</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image no-image">
+                    Sin imagen disponible
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Pez Espada Filete</div>
+                    <div class="product-measure">Por Kg</div>
+                    <div class="product-price">$11.00</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image no-image">
+                    Sin imagen disponible
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Pez Picudo Filete</div>
+                    <div class="product-measure">Por Kg</div>
+                    <div class="product-price">$12.00</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://res.cloudinary.com/drbromesx/image/upload/v1753917667/Captura_de_pantalla_2025-07-30_172611_s0ieu9.png" alt="Pez Trompeta filete">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Pez Trompeta Filete</div>
+                    <div class="product-measure">Por Kg</div>
+                    <div class="product-price">$7.00</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://res.cloudinary.com/drbromesx/image/upload/v1753937846/Captura_de_pantalla_2024-10-02_170133_cpvkry.png" alt="Pulpo Limpio">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Pulpo Limpio</div>
+                    <div class="product-measure">Por Kg</div>
+                    <div class="product-price">$13.50</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://res.cloudinary.com/drbromesx/image/upload/v1753917630/Captura_de_pantalla_2024-03-20_141817_ocuvi5.png" alt="Robalo entero">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Robalo Entero</div>
+                    <div class="product-measure">Por Kg</div>
+                    <div class="product-price">$10.00</div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image no-image">
+                    Sin imagen disponible
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Wahoo Filete</div>
+                    <div class="product-measure">Por Kg</div>
+                    <div class="product-price">$10.00</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Pescadería y Mariscos José Luis Holguín - Todos los derechos reservados</p>
+            <p>Santa Elena - La Libertad, Ecuador</p>
+        </div>
+    </div>
+</body>
+</html>
